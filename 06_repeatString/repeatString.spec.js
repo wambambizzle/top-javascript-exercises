@@ -24,7 +24,7 @@ describe("repeatString", () => {
     repeatString("don't use the built-in repeat method!", 1);
     expect(String.prototype.repeat).not.toHaveBeenCalled();
   });
-  test.skip("returns ERROR with negative numbers", () => {
+  test("returns ERROR with negative numbers", () => {
     expect(repeatString("goodbye", -1)).toEqual("ERROR");
   });
   test("repeats the string a random amount of times", function () {
